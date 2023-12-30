@@ -336,6 +336,10 @@ button.left-2-btn-1{
     margin-top: -10px;
 }
 
+/*  */
+
+
+
 /* container-4 */
 
 .container-4-right-heading{
@@ -384,16 +388,22 @@ button.left-2-btn-1{
     border-radius: 50%;
     box-shadow:0 0 20px red; 
 }
-.box-heading{
+.box-heading1{
     text-align: center;
     color: #000;
     font-weight: 500;
     font-size: 20px;
 }
-.box-para{
-    text-align:justify;
-    font-size: 19px;
+.box-heading-1-1{
+    font-size: 24px;
+    font-weight: 700;
+    /* margin-top: -10px; */
+}
+.box-para-1{
+    font-size: 15px;
     font-weight: 400;
+    text-align: justify;
+
 }
 .container-5--right-para{
     margin-top: 20px;
