@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+  }
+  
+body{
+    background: #ffffff;
+    color: #000000;
+  
+}
+
+.navbar-block{
+    background-image: url(../image/Home-Img/navbar-bg2.jpeg);
+    background-size:cover;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+
+.nav-up{
+    display: flex;
+    flex-direction: row;
+    height: 125px;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    /* width: 480px; */
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.nav-right{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.nav-nav1{
+    color: #000000;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.nav-nav1 p{
+    margin: auto 0px;
+}
+
+.nav-nav2{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-nav2 a{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.mail-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.mail-text p{
+    margin-top: 4PX;
+    margin-bottom: -10px;
+}
+.mail-text p1{
+    margin-top: 10px;
+}
+
+
+
+.nav-down{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
