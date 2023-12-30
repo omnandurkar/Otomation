@@ -260,7 +260,7 @@ button.left-2-btn-1{
 /* sub container-2 */
 
 .sub-container-2{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 800px;
     background-color: #fff;
     padding: 5px 5px;
@@ -327,5 +327,69 @@ button.left-2-btn-1{
 .box-heading-1{
     font-size: 15px;
     margin-top: -10px;
+}
+
+/* container-4 */
+
+.container-4-right-heading{
+    text-align: left;
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.container-4-right-para{
+    font-weight: 400;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+/* flex boxes */
+
+.services-flex{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid blue; */
+    margin-top: 10px;
+}
+.services-flex-box{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: auto;
+    background-color: #f1f0ee;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 0.3rem;
+}
+.flex-box1-icon{
+    width: 100px;
+    /* border: 2px solid red; */
+    margin: 50px auto;
+    text-align: center;
+    border-radius: 0.5rem;
+    
+}
+.box1-icons{
+    width: 100px;
+    /* border: none; */
+    border-radius: 50%;
+    box-shadow:0 0 20px red; 
+}
+.box-heading{
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+}
+.box-para{
+    text-align:justify;
+    font-size: 19px;
+    font-weight: 400;
+}
+.container-5--right-para{
+    margin-top: 20px;
+    font-weight: 400px;
 }
 
