@@ -47,58 +47,70 @@ a{
 /* middle division block */
 
 .container-2{
-    width: 90%;
+    width: 80%;
     background-color:#fff;
-    display: flex;
-    flex-wrap: wrap;
-    padding:  10px 60px;
+    /* padding:  10px 60px; */
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 .container-services{
-    width: 300px;
-    border: 2px solid #333;
+    width: 400px;
+    /* border: 2px solid #333; */
     border: none;
-    margin:2px 0 ;
+    margin-top:2px;
     padding:  0 5px;
     border-radius: 0.2rem;
     background-color: #f1f0ee;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
     /* box-shadow: 0px 0px 5px red; */
 }
 .service-list-heading{
     text-align: left;
     font-size: 28px;
     font-weight: 600; 
-    margin-top: 10px;
-    margin-bottom: 10px;
+    /* margin-top: 10px; */
+    margin-bottom:5px;
     /* border-bottom: 1px solid grey; */
-    padding-bottom: 5px;
-    padding-left: 5px;
+    /* padding-bottom: 5px; */
+    /* padding-left: 5px; */
 
 }
+.Categories-list{
+    display: flex;
+    flex-direction: row;
+    border-bottom:1px solid black ;
+    padding: 5px;
+}
+.list-icon-1{
+    width: 30px;
+    height: 30px;
+}
 .service-list{
-    /* border: 1px solid grey; */
-    
     padding: 0 20px;
     font-size: 24px;
-
 }
 .service-para{
     text-align: justify;
-    /* padding-bottom: 5px; */
     padding-left: 5px;
-    /* border-bottom: 1px solid grey; */
-    /* border-right-style: 10px; */
+
 }
 .service-links{
     color: #333;
+    font-size: 20px;
     text-decoration: none;
 }
+
+/* hover */
 .service-links:hover{
-    font-size: 30px;
+    /* font-size: 30px; */
     color: red;
-    
 }
+
+
 /* .container-services:hover{
     transition: transform 0.3s ease-in-out;
     transform: scale(1.1 , 1.1);
@@ -106,20 +118,19 @@ a{
 .container-image{
     border: 2px solid black;
     border: none;
-    width: 70%;
     border-radius: 0.2rem; 
     overflow: hidden;
+    margin: 2px 0;
     
 }
-/* .image{
-     width: 500px;
-     height: 100px;
+.image{
     object-fit: cover; 
     background-repeat: no-repeat;
     background-size: contain;
-} */
+    border-radius: 0.3rem;
+}
 .image1{
-    width: 1000px;
+    width: 800px;
     height: 500px;
     object-fit: cover;
 
@@ -130,7 +141,6 @@ a{
 .container-3{
     width: 80%;
     margin: 5px auto;
-    /* border: 1px solid black;  */
     display: flex;
     justify-content: space-around;
 
@@ -141,9 +151,6 @@ a{
 .sub-conatiner-1{
     display: flex;
     width: auto;
-    /* border: 1px solid black; */
-    /* margin: 0px 15px; */
-    /* padding: 10px; */
     flex-direction: column;
 }
 .left-1{
