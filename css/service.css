@@ -130,21 +130,25 @@ a{
 .container-3{
     width: 80%;
     margin: 5px auto;
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     display: flex;
+    justify-content: space-around;
 
 }
+
+    /* sub-container-1 */
+
 .sub-conatiner-1{
     display: flex;
     width: auto;
-    border: 1px solid black;
-    margin: 10px 15px;
-    padding: 10px;
+    /* border: 1px solid black; */
+    /* margin: 0px 15px; */
+    /* padding: 10px; */
     flex-direction: column;
 }
 .left-1{
     width: 400px;
-    border: 1px solid black; 
+    /* border: 1px solid black;  */
     padding: 30px;
     color: #fff;
     background-color: black;
@@ -238,7 +242,90 @@ button{
 }
 .left-para-input{
     width: 300px;
-    height: 200px;
+    height: 150px;
+    border-radius: 0.3rem;
+    border: none;
+}
+.left-2-btn{
+    margin: 0 auto;
+    margin-top: -20px;
+    margin-bottom: 10px;
+
+}
+button.left-2-btn-1{
+    width: 130px;
+    
 }
 
+/* sub container-2 */
+
+.sub-container-2{
+    border: 1px solid black;
+    width: 800px;
+    background-color: #fff;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+}
+/* headings */
+
+.container-right-heading{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.container-right-para{
+    font-weight: 400;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+
+/* flex boxes */
+
+.right-flex{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid seashell; 
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+
+}
+.right-flex-box{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.flex-box{
+    display: flex;
+    width: 350px;
+    border: 1px solid seashell;
+    padding: 5px 10px;
+    background-color: #f1f0ee;
+    border: 0.5rem;
+    margin: 5px 0;
+    justify-content: space-around;
+    box-shadow: 0 0 5px #333;
+}
+.flex-box-icon{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin-right: 5px;
+    /* text-align: left; */
+    
+}
+.box-heading{
+    font-weight: 700;
+    font-size: 24px;
+}
+.box-heading-1{
+    font-size: 15px;
+    margin-top: -10px;
+}
 
