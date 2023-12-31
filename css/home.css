@@ -267,6 +267,216 @@ body{
 /* <=====================  SLIDER   ===============> */
 
 
+/* ++++++++++++++++++++++++  SpecialmFeatured Service  ++++++++++++++++++++++++++ */ 
+
+.s-services{
+    background-color: rgb(226, 224, 222);
+    padding-top: 30px;
+}
+
+.s-services-title{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.s-services-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.s-service-card-block{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 630px;
+    width: 400px;
+    /* position: relative; */
+    transition: .5s ease-in-out;
+    border: ;
+}
+
+.s-service-img{
+    /* height: 250px; */
+    /* position: absolute; */
+    z-index: 10;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .7s ease-in-out;
+    
+}
+
+.s-service-card-info{
+    background-color: white;
+    width: 400px;
+    height: 380px;
+    display: flex;
+    justify-content:end;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px;
+    margin-top: -285px;
+    z-index: 5;
+    transition: .5s ease-in-out;
+    border-radius: 7px;
+    cursor:pointer;
+    box-shadow: 0px 10px 65px 0px rgb(150, 150, 150);
+    padding-bottom: 25px;
+}
+
+
+.s-service-card-block:hover{
+    transform: scale(1.1);
+}
+
+.s-service-card-block:hover .s-service-img{
+    transform: scale(0.9);
+    transform: translateY(-100px)
+
+}
+
+.s-service-card-block:hover .s-service-card-info{
+    flex-direction: column;
+    background-color: #000000;
+    color: white;
+}
+
+.s-service-card-block:hover .s-service-card-info h3{
+    color: #ee2737;
+}
+
+
+ .s-service-card-info h3{
+    /* padding-bottom:-20px; */
+    margin-top: 50px;
+    /* padding-bottom: 20px; */
+    padding-top: 20px;
+    font-family: 'Rubik', sans-serif;
+    /* transition: .7s ease-in-out; */
+
+
+}
+
+.s-service-card-info p{
+    /* margin-top: -20px; */
+    /* color: white; */
+    transition: .5s ease-in-out;
+}
+
+
+
+.s-service-card-info:hover{
+    background-color: transparent;
+}
+
+.s-service-img:hover {
+    transform: scale(0.9);
+    transform: translateY(-100px)
+}
+
+.s-service-img:hover .s-service-card-info{
+    flex-direction: column;
+    box-shadow: 0px 10px 65px 0px rgb(104, 102, 102);
+    transition: 0.3s ease-in-out;
+
+}
+
+/* .s-service-img :hover .s-service-card-info{
+    background-color: #000000;
+    color: white;
+} */
+
+
+
+
+
+.s-service-card-info:hover{
+    background-color: #000000;
+    color: white;
+    transition: 0.3s ease-in-out;
+
+}
+
+.s-service-more-btn{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.s-service-more-btn button{
+    background-color: black;
+    margin: 10px;
+    padding: 9px 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+    border: #eee;
+    margin-top: -40px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 0px;
+    width: 160px;
+    z-index: 10;
+}
+
+/* <!-- <+++++++++ =========  Why Us ========  +++++> --> */
+
+.why-us-main{
+    
+}
+.why-us-block{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.why-us-info{
+    width: 600px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.why-us-cards-block1{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+.why-us-cards-block2{
+    display: flex;
+    margin: auto;
+    padding: 20px;
+}
+
+.why-us-card{
+    height: 100px;
+    width: 190px;
+    background-color: antiquewhite;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
 /* ++++++++++++++++++++++++  Our Services  ++++++++++++++++++++++++++ */ 
 
 
