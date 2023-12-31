@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* {
+    font-family: 'PT Serif', serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+
+} */
+
 * {
     margin: 0;
     padding: 0;
@@ -147,6 +160,36 @@ body{
     align-items: center;
 }
 
+.nav-down-links{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-down-links a{
+    padding: 10px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-down-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.nav-down-btn a{
+    padding: 10px;
+    color: #ee2737;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.nav-down-btn img{
+    margin-top: 5px;
+}
+
 
 /* <==================  SLIDER    ==================> */
 
@@ -222,3 +265,157 @@ body{
 }
 
 /* <=====================  SLIDER   ===============> */
+
+
+/* ++++++++++++++++++++++++  Our Services  ++++++++++++++++++++++++++ */ 
+
+
+
+.service-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(226, 224, 222);
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.service-price-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1300px;
+}
+
+.service-price-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-price-title h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 33px ;
+    padding-top: 20px;
+}
+
+.service-price-title p{
+    margin:-5px
+}
+
+
+.service-price-card-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -30px;
+
+}
+
+.service-price-card{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 10px;
+    background-color: white;
+    width: 290px;
+    border-radius: 7px; 
+    padding: 16px 0px 29px 30px;
+    transition: 0.7s ease-in-out;
+}
+
+.service-price-card:hover{
+    background-color: black;
+    color: aliceblue;
+    box-shadow: 4px 2px 12px 2px #ee959d;
+    transition: 0.3s ease-in-out;
+    transform: scale(.9);
+    /* transform: scaleY(0.9); */
+}
+
+.service-price-card:hover h2{
+    color: #ee2737;
+    transition: 0.4s ease-in;
+}
+
+
+
+.service-price-card:hover button{
+     background-image: linear-gradient(to right, #ee2737  0%, rgb(233, 120, 72)    51%, #ee2737  100%);
+     color: white;
+     transition: 0.5s ease-in;
+}
+
+.spc1{
+    margin-top: 100px;
+}
+
+.spc1 span{
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    margin-left: -10px;
+    color: black;
+}
+
+.service-price-card:hover span{
+    color: grey;
+}
+
+
+
+
+
+.service-price-card h1{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+}
+.service-price-card h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 45px;
+    color: #ee2737;
+    margin: 0px;
+}
+
+.service-price-card p{
+    font-family: 'Rubik', sans-serif;
+    font-size: 12px;
+    margin-top: 10px;
+    
+}
+
+
+
+         
+.service-price-btn{
+    /* background-image: linear-gradient(to right, #DA22FF 0%, #9733EE  51%, #DA22FF  100%); */
+    background-color: black;
+    margin: 10px;
+    padding: 9px 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+    border: #eee;
+    margin-top: 19px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 0px;
+    width: 160px;
+    
+    
+}
+
+.service-price-btn:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+    transition: 0.7s ease-in;
+}
