@@ -433,7 +433,7 @@ body{
 /* <!-- <+++++++++ =========  Why Us ========  +++++> --> */
 
 .why-us-main{
-    
+    display: none;
 }
 .why-us-block{
     display: flex;
@@ -653,6 +653,41 @@ body{
     
     
 }
+
+.innovation-img{
+    transform: scale(0.8);
+    transition: .6s ease-in-out;
+    border: 2px solid black;
+}
+.innovation-img:hover{
+    transform: scale(0.9);
+    box-shadow: 15px 15px 50px 0px rgb(123, 120, 120);
+}
+.innovation-info h2{
+    font-weight: bolder;
+    font-family: 'Rubik', sans-serif;
+}
+
+.innovation-info p1{
+
+    margin-bottom: 10px;
+}
+
+.innovation-points li{
+    transition: .6s ease-in-out;
+}
+
+.innovation-points li:hover{
+    color: #ee2737;
+    transform: scaleX(0.9);
+    margin: 10px;
+    font-weight: bolder;
+
+    /* transform: scale3d(1.1); */
+}
+
+
+
 
 
 
