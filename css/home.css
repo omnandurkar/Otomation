@@ -28,6 +28,21 @@ body{
   
 }
 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.center{
+    justify-content: center;
+    align-items: center ;
+}
+
 .navbar-block{
     background-image: url(../image/Home-Img/navbar-bg2.jpeg);
     background-size:cover;
@@ -264,6 +279,124 @@ body{
     }
 }
 
+
+/* <!-- <======= SELECT YOUR CAR====> --> */
+ 
+.car-selector-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+
+    
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.car-select-block{
+    background-color:white;
+    height: 350px;
+    width: 360px;
+    margin-top: -270px;
+    z-index: 10;
+    box-shadow: 10px 10px 50px 0px grey;
+    border-radius: 10px;
+    padding: 50px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid black;
+    opacity: 0;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+    
+}
+
+.car-select-block h2{
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.car-select-block select{
+    margin-bottom: 20px;
+}
+
+.feature-poster-1{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+
+}
+
+.f-p-same{
+    background-color: rgb(226, 224, 222);
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    height: 130px;
+    justify-content: space-around;
+    align-items: center;
+    width: 420px;
+    
+}
+
+.f-poster-1{
+    /* margin-right: 200px */
+}
+
+.f-poster-info h3{
+    font-family: 'Rubik', sans-serif;
+    font-size: 25px;
+    margin-left: -10px;
+}
+.f-p-same h2{
+    font-family: 'Rubik', sans-serif;
+    font-size: 50px;
+    opacity: 40%;
+    margin-top: 20px;
+    margin-left: -20px;
+
+}
+
+.f-poster-info p1{
+    font-weight: bold;
+    font-size: 14px;
+    color: #ee2737;
+}
+
+
+.poster-logo-1 {
+    /* border-radius: 50%; */
+    height: 43px;
+}
+
+
+
+
+
 /* <=====================  SLIDER   ===============> */
 
 
@@ -430,6 +563,188 @@ body{
     z-index: 10;
 }
 
+
+
+/* ===================     FEATURED SERVICES   =================== */
+
+.featured-title{
+    margin: 20px;
+    padding: 20px;
+    margin-bottom: -30px;
+}
+
+.featured-services{
+    background-color: rgb(226, 224, 222);
+}
+.featured-services-block{
+    justify-content: space-between;
+    width: 80vw;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.featured-services-cards{
+    /* opacity: 0; */
+    
+}
+
+.featured-services-cards:hover{
+    
+}
+
+.f-card1{
+    padding: 20px;
+    margin: 50px;
+    /* border: 1px solid black; */
+    /* margin-left: 50px; */
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: beige; */
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.f-card1:hover{
+    transform: scale(1.1);
+    
+}
+
+
+
+.f-card1 img{
+    height: 70px;
+    margin: auto;padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+    /* background-color: white; */
+    background-color: rgb(226, 224, 222);
+    margin-bottom: -20px;
+    animation:  floatImageD 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+
+@keyframes floatImageD {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10);
+    }
+}
+
+.f-card-img{
+    z-index: 10;
+    height: 70px;
+    margin: auto;padding: 10px;
+    margin: 10px;
+    border-radius: 50%;
+    /* background-color: white; */
+    
+}
+
+.f-card-info{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    height: 100px;
+    justify-content: center;
+    align-items:end;
+    display: flex;
+    z-index: 5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: -20px;
+    width: 200px;
+    padding-bottom: 15px;
+    box-shadow: 5PX 5PX 30PX 0PX grey;
+    transition: .4s ease-in-out;
+    
+
+
+
+}
+
+.door-step h5{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.f-card-info:hover{
+    background-color: #ee2737;
+    color: wheat;
+}
+
+/* .f-card-info{
+    --color: white;
+    --hover: #ee2737;
+    
+  }
+
+.f-card-info:hover,
+.f-card-info:focus {
+  box-shadow: inset 0 -4.25em 0 0 var(--hover);
+
+} */
+
+
+.featured-services-button button{
+    background-color: black;
+    margin: 10px;
+    padding: 9px 17px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    /* box-shadow: 0 0 20px #eee; */
+    border-radius: 10px;
+    display: block;
+    border: #eee;
+    margin-top: 19px;
+    font-size: 15px;
+    font-family: 'Rubik', sans-serif;
+    margin-left: 0px;
+    width: 160px;
+}
+
+.f-card-info h3{
+    font-size: 21px;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+/* ===============   POSTER =============== */
+
+.poster{
+    background-image: url(../image/Home-Img/poster.jpeg);
+    height: 340px;
+    /* filter: blur(3px); */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.poster h1{
+    padding: 15px;
+}
+
+
+
+
+
+
 /* <!-- <+++++++++ =========  Why Us ========  +++++> --> */
 
 .why-us-main{
@@ -478,7 +793,7 @@ body{
 
 
 
-/* ++++++++++++++++++++++++  Our Services  ++++++++++++++++++++++++++ */ 
+/* ++++++++++++++++++++++++  Our Services  PRICE ++++++++++++++++++++++++++ */ 
 
 
 
@@ -540,26 +855,29 @@ body{
 }
 
 .service-price-card:hover{
-    background-color: black;
-    color: aliceblue;
+    /* background-color: black; */
+    /* background-color: rgb(239, 194, 194); */
+    /* color: aliceblue; */
     box-shadow: 4px 2px 12px 2px #ee959d;
     transition: 0.3s ease-in-out;
-    transform: scale(.9);
+    /* transform: scale(0.9); */
+    transform: translateY(-10px);
     /* transform: scaleY(0.9); */
 }
 
-.service-price-card:hover h2{
+/* .service-price-card:hover h2{
     color: #ee2737;
+    color: #000000;
     transition: 0.4s ease-in;
-}
+} */
 
 
 
-.service-price-card:hover button{
+/* .service-price-card:hover button{
      background-image: linear-gradient(to right, #ee2737  0%, rgb(233, 120, 72)    51%, #ee2737  100%);
      color: white;
      transition: 0.5s ease-in;
-}
+} */
 
 .spc1{
     margin-top: 100px;
@@ -572,9 +890,10 @@ body{
     color: black;
 }
 
-.service-price-card:hover span{
+/* .service-price-card:hover span{
     color: grey;
-}
+    color: white;
+} */
 
 
 
@@ -720,12 +1039,12 @@ body{
 /* <=========== FOOTER  ===========> */
 
 footer{
-background-color: #000000;
+background-color: #ffffff;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
-height: 500px;
+color: rgb(0, 0, 0);
+height: 400px;
 }
 .footer-box{
     width: 80%;
