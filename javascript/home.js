@@ -38,3 +38,5 @@ window.onresize = function(event) {
     reloadSlider();
 };
 
+
+
