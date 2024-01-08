@@ -31,7 +31,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .navbar-block {
