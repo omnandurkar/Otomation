@@ -242,34 +242,28 @@ a {
     color: black;
     border: none;
     box-shadow: 6px 8px 20px 0px gray;
-    height: 270px;
-    width: 250px;
+    height: 140px;
+    width: 200px;
     padding: 20px;
-    ;
     text-align: center;
     margin: 25px 15px 15px 15px;
     border-radius: 15px;
+    cursor: pointer;
 
 }
 
 .card:hover {
-    transform: scale(0.9);
-    transition: 0.4s ease;
+    transform: scale(1.1);
+    transition: 1s ease;
     box-shadow: 6px 8px 20px 0px gray;
-    border: 2px solid black;
 }
 
 .service-img {
-    height: 100px;
+    height: 70px;
 }
 
 .card-head {
-    font-size: 24px;
-}
-
-.read {
-    margin-right: 150px;
-
+    font-size: 20px;
 }
 
 .div-m {
@@ -289,21 +283,21 @@ a {
     background-color: white;
     color: black;
     border: none;
-    height: 270px;
+    height: 140px;
     box-shadow: 6px 8px 20px 0px gray;
-    width: 250px;
+    width: 200px;
     padding: 20px;
     ;
     text-align: center;
     margin: 25px 15px 15px 15px;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card-s:hover {
-    transform: scale(0.9);
+    transform: scale(1.1);
     transition: 0.4s ease;
     box-shadow: 6px 8px 20px 0px gray;
-    border: 2px solid black;
 }
 
 .how-works {
