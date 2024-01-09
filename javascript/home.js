@@ -39,4 +39,75 @@ window.onresize = function(event) {
 };
 
 
+// img locations
+// ./image/Cars-img/Honda/[carName].jpg
+// ./image/Cars-img/Ford/[carName].jpg
+// ./image/Cars-img/mers/[carName].jpg
 
+// insert in this Element 
+// <img src="" id="carImg" alt="">
+
+
+// render images from provided locations in this image Element
+
+// use the bellow fuction for refrace
+// when user select the car then only render the image
+
+let brand = ""
+ 
+function bandChange() {
+    // Get the selected brand
+    var selectedBrand = document.getElementById("cars").value;
+
+  
+    // Get the cars-model dropdown
+    var carsModelDropdown = document.getElementById("cars-model");
+    var carImage = document.getElementById("carImg");
+
+    // Clear existing options
+    carsModelDropdown.innerHTML = '<option class="ptr" value="">-- Your Model</option>';
+
+    // Populate cars based on the selected brand
+    brand = selectedBrand
+    if (selectedBrand === "mercedes") {
+        addOption(carsModelDropdown, "GLA 200");
+        addOption(carsModelDropdown, "GLC 220d");
+        addOption(carsModelDropdown, "GLS 450");
+        addOption(carsModelDropdown, "GLE 350");
+    } else if (selectedBrand === "ford") {
+        addOption(carsModelDropdown, "Ecosport");
+        addOption(carsModelDropdown, "Endeavour");
+        addOption(carsModelDropdown, "Fiesta");
+        addOption(carsModelDropdown, "Figo");
+    } else if (selectedBrand === "honda") {
+        addOption(carsModelDropdown, "Amaze");
+        addOption(carsModelDropdown, "Brio");
+        addOption(carsModelDropdown, "City");
+        addOption(carsModelDropdown, "Civic");
+    }
+
+    
+      // Update the image source based on the selected brand and model
+ }
+
+function addOption(selectElement, optionText) {
+    var option = document.createElement("option");
+    option.value = optionText.toLowerCase().replace(/\s+/g, '-');
+    option.text = optionText;
+    selectElement.add(option);
+}
+
+
+function changeCar() {
+
+    var model = document.getElementById("cars-model");
+    
+    var carImage = document.getElementById("carImg");
+    console.log(  `./image/Cars-img/${brand}/${model.value}.jpg`);
+    // Set the image source based on the brand and model.value
+    sessionStorage.setItem("brand",brand)
+    sessionStorage.setItem("model",model.value)
+    document.getElementById("bookServiceBtn").style.opacity="1";
+
+    carImage.src = `./image/Cars-img/${brand}/${model.value}.jpg`;
+}

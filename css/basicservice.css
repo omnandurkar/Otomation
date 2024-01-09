@@ -289,7 +289,7 @@ a{
 }
 .container-content:hover{
     /* transform: scaleY(1.1); */
-    transform: scale(0.9);
+    transform: scale(0.95);
     transition: 0.3s ease;
     background-color: white;
 
@@ -601,3 +601,5 @@ footer{
         color: #ee2737;
         /* text-decoration: underline; */
     }
+
+    
