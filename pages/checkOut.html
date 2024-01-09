@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/basicservice.css" />
+
+</head>
+
+
+<style>
+    
+h1 {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-right: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+</style>
+<body>
+    <navbar>
+
+        <nav class="navbar-block">
+            <div class="nav-up">
+                <div class="nav-logo">
+                    <h1>Otomation</h1>
+                </div>
+
+                <div class="nav-right">
+                    <div class="nav-nav1">
+                        <p>Welcome To Otomation Automobile Repair Co+mpany</p>
+                        <div class="nav-social">
+                            <P>Follow Us on : </P>
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/meta.png" height="19px">
+                            </a>
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/linkedin.png" height="17px">
+                            </a>
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/twitter.png" height="15px">
+                            </a>
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/google-plus.png" height="21px">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="nav-nav2">
+                        <div class="nav-reach">
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/email.png" height="30px">
+                                <div class="mail-text">
+                                    <p>Make An Email</p>
+                                    <p1>Otomation@gmail.com</p1>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/customer-care.png" height="30px">
+                                <div class="mail-text">
+                                    <p>Call Us 24/7</p>
+                                    <p1>+91 9766426214</p1>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/clock.png" height="30px">
+                                <div class="mail-text">
+                                    <p>Office Time</p>
+                                    <p1>10 Am to 5 Pm</p1>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="nav-search">
+                            <a href="#">
+                                <img src="../image/Home-Img/home-icons/search.png" height="24px">
+                                <img src="../image/Home-Img/home-icons/location.png" height="24px">
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-down">
+                <div class="nav-down-links">
+                    <a href="../index.html">Home</a>
+                    <a href="./all-services.html">Services</a>
+                    <a>Contact Us</a>
+                    <a>Pages</a>
+                    <a>Plans</a>
+                </div>
+
+                <div class="nav-down-btn">
+                    <a href="#">Book A Service</a>
+                    <a>
+                        <img src="../image/Home-Img/home-icons/booking.png" height="25px">
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </navbar>
+
+
+    <section>
+
+        <h1>Periodic Checkout</h1>
+        <div class="container">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+    
+        <div class="container">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+    
+        <div class="container">
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="cash">Cash</option>
+                <option value="card">Card</option>
+            </select>
+        </div>
+    
+        <div class="container">
+            <label for="totad">Total Amount:</label>
+            <input type="number" id="totad" name="totad">
+        </div>
+    
+        <div class="container">
+            <button>Checkout</button>
+        </div>
+    </section>
+</body>
+
+</html>

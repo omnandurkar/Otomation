@@ -293,12 +293,10 @@ body{
 
 @keyframes zoomIn {
     0% {
-        transform: scale(0);
-        opacity: 0;
+        transform: scale(0.9);
     }
     100% {
         transform: scale(1);
-        opacity: 1;
     }
 
 }
@@ -317,7 +315,8 @@ body{
 
 .car-select-block{
     background-color:white;
-    height: 350px;
+    height: auto;
+    min-height: 350px;
     width: 360px;
     margin-top: -270px;
     z-index: 10;
@@ -326,12 +325,15 @@ body{
     padding: 50px 30px 30px 30px;
     display: flex;
     flex-direction: column;
+
     font-family: 'Rubik', sans-serif;
     border: 2px solid black;
-    opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
     
+}
+.car-select-block::selection, .car-select-block:hover{
+    animation: none;
 }
 
 .car-select-block h2{
@@ -343,6 +345,23 @@ body{
 .car-select-block select{
     margin-bottom: 20px;
 }
+
+#carImg{
+    max-width: 200px;
+    margin: auto;
+ 
+ }
+ #bookServiceBtn{
+  padding: 7px 10px; 
+  width:fit-content; 
+  margin: auto;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #000000;
+  color: white;
+  opacity: 0.2;
+ }
+
 
 .feature-poster-1{
     display: flex;
@@ -1185,3 +1204,8 @@ height: 400px;
 
 
 
+/* common css */
+
+.ptr{
+    cursor: pointer;
+}
