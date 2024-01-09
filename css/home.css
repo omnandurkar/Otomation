@@ -1036,12 +1036,13 @@ body{
 /* <!-- <================= HOW WE WORK  +==============> --> */
 
 
+
 .how-we-work-main{
-    background-image: url(../image/Home-Img/how-work-bg.jpeg);
+    background-image: url(../image/Home-Img/Screenshot.png);
     height: 568px;
     background-size:contain;
     /* background-size: cover; */
-    color: white;
+    color: black;
 }
 
 .how-we-work-block{
