@@ -39,19 +39,7 @@ window.onresize = function(event) {
 };
 
 
-// img locations
-// ./image/Cars-img/Honda/[carName].jpg
-// ./image/Cars-img/Ford/[carName].jpg
-// ./image/Cars-img/mers/[carName].jpg
-
-// insert in this Element 
-// <img src="" id="carImg" alt="">
-
-
-// render images from provided locations in this image Element
-
-// use the bellow fuction for refrace
-// when user select the car then only render the image
+ 
 
 let brand = ""
  

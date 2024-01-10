@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=\, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="../css/basicservice.css" />
+  <link rel="stylesheet" href="../css/home.css" />
+  <script src="https://js.stripe.com/v3/"></script>
 </head>
 
 <body>
@@ -77,7 +79,7 @@
 
       <div class="nav-down">
         <div class="nav-down-links">
-          <a  href="../index.html">Home</a>
+          <a href="../index.html">Home</a>
           <a href="./all-services.html">Services</a>
           <a>Contact Us</a>
           <a>Pages</a>
@@ -119,7 +121,7 @@
       <!-- left box -->
 
       <div class="container-left">
-        <div class="container-content">
+        <div class="container-content" id="selectCard1" onclick="selectCart('selectCard1')">
           <div class="content-1">
             <div class="content-img">
               <div class="text">
@@ -131,8 +133,8 @@
             <div class="content-text">
               Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
               Adipisci, dolores rerum <br />quas soluta voluptatem architecto!
-              <br/>
-              <br/>
+              <br />
+              <br />
               <div class="price">
                 <h3>₹3000</h3>
               </div>
@@ -142,7 +144,7 @@
               <div class="time">
                 <p>4hr</p>
               </div>
-             
+
             </div>
           </div>
           <div class="content-btn">
@@ -150,7 +152,7 @@
           </div>
         </div>
 
-        <div class="container-content">
+        <div class="container-content" id="selectCard2" onclick="selectCart('selectCard2')">
           <div class="content-1">
             <div class="content-img">
               <div class="text">
@@ -162,8 +164,8 @@
             <div class="content-text">
               Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
               Adipisci, dolores rerum <br />quas soluta voluptatem architecto!
-              <br/>
-              <br/>
+              <br />
+              <br />
               <div class="price">
                 <h3>₹3000</h3>
               </div>
@@ -173,7 +175,7 @@
               <div class="time">
                 <p>4hr</p>
               </div>
-              
+
             </div>
           </div>
           <div class="content-btn">
@@ -181,7 +183,7 @@
           </div>
         </div>
 
-        <div class="container-content">
+        <div class="container-content" id="selectCard3" onclick="selectCart('selectCard3')">
           <div class="content-1">
             <div class="content-img">
               <div class="text">
@@ -193,8 +195,8 @@
             <div class="content-text">
               Lorem, ipsum dolor sit amet consectetur <br />adipisicing elit.
               Adipisci, dolores rerum <br />quas soluta voluptatem architecto!
-              <br/>
-              <br/>
+              <br />
+              <br />
               <div class="price">
                 <h3>₹3000</h3>
               </div>
@@ -204,7 +206,7 @@
               <div class="time">
                 <p>4hr</p>
               </div>
-             
+
             </div>
           </div>
           <div class="content-btn">
@@ -222,7 +224,8 @@
           </div>
 
           <div class="right-img">
-            <img id="selectedcarImage" src="../image/basic-service/white-offroader-jeep-parking.jpg" class="right-img" />
+            <img id="selectedcarImage" src="../image/basic-service/white-offroader-jeep-parking.jpg"
+              class="right-img" />
           </div>
 
           <div class="right-input">
@@ -239,26 +242,48 @@
                 <option value="audi">Audi</option>
               </select> -->
 
-            <label for="cars">Choose a car:</label>
-            <select name="cars" id="cars">
-              <optgroup label="Mercedes">
-                <option value="GLA">car1</option>
-                <option value="C-CLASS">car2</option>
-              </optgroup>
-              <optgroup label="BMW">
-                <option value="M3">bmw1</option>
-                <option value="M2">bmw2</option>
-              </optgroup>
-            </select>
+            <div id="selectCar">
+
+
+              <h4>Please Select The Car</h4>
+              <label for="cars">Car:</label>
+              <select class="ptr" id="cars" name="carlist" form="carform" onchange="bandChange()">
+                <option class="ptr" value="">-- Your Car</option>
+                <option class="ptr" value="mercedes">Mercedes</option>
+                <option class="ptr" value="ford">Ford</option>
+                <option class="ptr" value="honda">Honda</option>
+              </select>
+              <br>
+              <label for="cars-model">Model:</label>
+              <select id="cars-model" class="ptr" name="car-modellist" form="car-modelform" onchange="changeCar()">
+                <option class="ptr" value="">-- Your Model</option>
+              </select>
+            </div>
+
+
           </div>
 
-          <div class="right-cost">
-            <p>Total =</p>
-            <input type="text" placeholder="service-cost">
-          </div>
+          <div class="billCart" id="billCart">
+
+            <div>
+              <p>Selected Plane</p>
+              <p>: basic-service</p> 
+            </div>
+            <div>
+              <p>Costing</p>
+              <p>: 3000</p> 
+            </div>
+            <div>
+              <p>Time</p>
+              <p>: 4 Hrs</p> 
+            </div>
+
+          </div> 
+
+          
 
           <div class="right-btn">
-            <a href="./checkOut.html">
+            <a id="checkOutBTN" href="./checkOut.html">
               checkOut
             </a>
           </div>
