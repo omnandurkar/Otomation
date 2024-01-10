@@ -278,15 +278,17 @@ a{
     flex-direction: column;
     width: 470px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid rgb(255, 255, 255);
     margin: 10px;
     padding: 10px;
     background-color: #fff;
     border-radius: 0.3rem;
-    border: none;
-    justify-content: space-between;
+     justify-content: space-between;
     box-shadow: 6px 8px 20px 0px gray;
 }
+.selected {
+    border-color: red;
+  } 
 .container-content:hover{
     /* transform: scaleY(1.1); */
     transform: scale(0.95);
@@ -385,7 +387,6 @@ a{
     padding: 10px;
     border-radius: 0.3rem;
     box-shadow:  0 0 10px black;
-    background-color: #f1f0ee;
 }.right-heading{
     text-align: left;
     font-size: 24px;
@@ -602,4 +603,34 @@ footer{
         /* text-decoration: underline; */
     }
 
-    
+    .billCart{
+        width: 90%;
+        margin: 0px auto;
+        padding: 10px;
+        border: 2px dashed black;
+        border-radius: 10px;
+        display: none;
+        background-color: whitesmoke;
+        
+    }
+    .billCart>div{
+      display: flex;
+      gap: 10px;
+      font-size: 15px;
+    }
+    .billCart>div>p:nth-child(1){
+        width: 110px;
+        font-weight: bolder;
+    }
+
+    #checkOutBTN{
+        padding: 7px 10px; 
+        width:fit-content; 
+        margin: auto;
+        text-decoration: none;
+        border-radius: 5px;
+        background-color: #000000;
+        color: white;
+        opacity: 0.2;
+       }
+      
